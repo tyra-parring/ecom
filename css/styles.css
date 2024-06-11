@@ -184,7 +184,7 @@ main {
     color: #d2c3a7;
     padding: 20px;
     width: 100%;
-    /* position: fixed; */
+    position: fixed;
     bottom: 0;
     /* transition: transform 0.3s ease-in-out;  */
 }
