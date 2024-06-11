@@ -5,6 +5,18 @@
     padding: 30px;
 }
 
+/* .store-container {
+    background-image: url(https://tyra-parring.github.io/host-/image/pexels-lenacs-10884711.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+} */
+
+.main {
+    min-height: 100%;
+}
+
 /* #coats {
     display: flex;
     justify-content: space-evenly;
@@ -14,6 +26,7 @@
     border: 1px solid black;
     padding: 50px;
     width: 30%;
+    height: 300px;
     display: inline-block;
     margin: 20px;
 }
@@ -368,4 +381,8 @@ video {
 .collection-container a {
     text-decoration: none;
     color: rgb(250, 243, 234) ;
+}
+
+.lux {
+    color: #f4f1e6;
 }
