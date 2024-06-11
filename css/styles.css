@@ -45,6 +45,8 @@ header {
     background-color: #b6611b;
     display: flex;
     justify-content: center;
+    padding: 10px;
+    padding-bottom: 12px;
     padding: 12px;
     text-align: center;
     position: fixed;
@@ -333,10 +335,9 @@ main {
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1; 
-    color: rgb(241, 236, 228);
+    color:  rgb(255, 255, 254);
     font-size: 20px;
-    padding-bottom: 200px;
-    padding-top: 200px;
+    padding-bottom: 145px;
     line-height: 22px;
 }
 
@@ -357,6 +358,7 @@ video {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
+    filter: brightness(0.8);
 }
 
 .collection-container {
