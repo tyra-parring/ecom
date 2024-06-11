@@ -333,8 +333,11 @@ main {
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1; 
-    color: rgb(244, 235, 223);
+    color: rgb(241, 236, 228);
     font-size: 20px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    line-height: 22px;
 }
 
 .vid {
@@ -344,4 +347,14 @@ main {
 video {
     width: 100%;
     height: auto;
+}
+
+.bdy {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://tyra-parring.github.io/host-/image/6255534-uhd_4096_2160_25fps-ezgif.com-optimize.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
 }
