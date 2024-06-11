@@ -47,6 +47,7 @@ header {
     justify-content: center;
     padding: 10px;
     padding-bottom: 12px;
+    padding: 12px;
     text-align: center;
     position: fixed;
     top: 0;
@@ -203,7 +204,7 @@ main {
     margin: 0 10px;
     color: #d2c3a7;
     text-decoration: none;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
 }
 
 .footer-bottom {
@@ -237,7 +238,7 @@ main {
     height: 100px; 
     background-size: cover;
     margin-bottom: 20px;
-    background: url('../imgs/elegant-woman-brown-coat-spring-city.jpg')
+    background-image: url('https://tyra-parring.github.io/host-/image/elegant-woman-brown-coat-spring-city.jpg');
 }
 
 .img2 {
@@ -358,4 +359,13 @@ video {
     background-attachment: fixed;
     height: 100vh;
     filter: brightness(0.8);
+}
+
+.collection-container {
+    padding-bottom: 100px;
+}
+
+.collection-container a {
+    text-decoration: none;
+    color: rgb(250, 243, 234) ;
 }
