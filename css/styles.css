@@ -5,13 +5,10 @@
     padding: 30px;
 }
 
-/* .store-container {
-    background-image: url(https://tyra-parring.github.io/host-/image/pexels-lenacs-10884711.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100%;
-} */
+.store-container {
+    padding: 0;
+    margin: 0;
+}
 
 .main {
     min-height: 100%;
@@ -23,13 +20,16 @@
 } */
 
 .coat {
-    /* border: 1px solid black; */
-    padding: 50px;
-    width: 30%;
-    height: 100px;
+    padding: 20px; /* Adjust as needed */
+    width: calc(33.33% - 40px); /* Calculate width dynamically to fit three items in a row with spacing */
+    height: auto; /* Adjust as needed */
     display: inline-block;
-    /* margin: 20px; */
+    margin: 0 10px 20px; /* Adjust as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    vertical-align: top; /* Align elements at the top of the container */
 }
+
+
 
 /* .beige {
     background-color: beige;
@@ -126,7 +126,7 @@ main {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: transform 4s ease;
 }
 
 .coat .hover-image:nth-child(n+2) {
@@ -145,18 +145,21 @@ main {
 .coat p {
     font-size: x-large;
     justify-content: center;
-    margin-left: 100px;
 }
 
 .coat h2 {
    display: flex;
    justify-content: center;
-   margin-left: 100px;
+   font-weight: 100;
 }
 
 #navbar {
     padding: 20px;
     padding-top: 39px;
+}
+
+.mglass {
+    justify-content: right;
 }
 
 .navbar {
@@ -431,5 +434,51 @@ video {
 }
 
 .lux {
-    color: #353535;
+    color: rgb(250, 243, 234);
+    display: flex;
+    justify-content: center;
+}
+
+.lux2 {
+    color: rgb(250, 243, 234);
+    margin-top: 55px;
+}
+
+.backimg {
+    background: url(https://tyra-parring.github.io/host-/image/pexels-lenacs-10884711.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.store-container {
+    width: 100%; 
+    overflow-x: hidden; 
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#wmncoats h2 {
+    color: rgb(250, 243, 234);
+}
+
+#wmncoats p {
+    color: rgb(250, 243, 234);
+    font-size: x-large;
+    justify-content: center;
+}
+
+.main-image {
+    width: 350px;
+}
+
+.hover-image {
+    width: 350px;
 }
