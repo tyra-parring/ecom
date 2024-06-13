@@ -5,18 +5,31 @@
     padding: 30px;
 }
 
+.store-container {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    min-height: 100%;
+}
+
 /* #coats {
     display: flex;
     justify-content: space-evenly;
 } */
 
 .coat {
-    border: 1px solid black;
-    padding: 50px;
-    width: 30%;
+    padding: 20px; /* Adjust as needed */
+    width: calc(33.33% - 40px); /* Calculate width dynamically to fit three items in a row with spacing */
+    height: auto; /* Adjust as needed */
     display: inline-block;
-    margin: 20px;
+    margin: 0 10px 20px; /* Adjust as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    vertical-align: top; /* Align elements at the top of the container */
 }
+
+
 
 /* .beige {
     background-color: beige;
@@ -103,9 +116,65 @@ main {
     color: #666;
 }
 
+.coat .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.coat .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: transform 4s ease;
+}
+
+.coat .hover-image:nth-child(n+2) {
+    display: none;
+}
+
+.coat:hover .hover-image {
+    display: block;
+    opacity: 1;
+}
+
+.coat:hover .main-image {
+    opacity: 0;
+}
+
+.coat p {
+    font-size: x-large;
+    justify-content: center;
+}
+
+.coat h2 {
+   display: flex;
+   justify-content: center;
+   font-weight: 100;
+}
+
+.coat button[type="submit"] {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 118px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.coat button[type="submit"]:hover {
+    background-color: white;
+    color: #6b5338;
+}
+
+
 #navbar {
     padding: 20px;
     padding-top: 39px;
+}
+
+.mglass {
+    justify-content: right;
 }
 
 .navbar {
@@ -126,7 +195,8 @@ main {
 .search-bar {
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 100px;
+    margin-top: 35px;
     transform: translateY(-50%);
     display: flex;
     align-items: center;
@@ -145,7 +215,7 @@ main {
     background-color: #6b5338;
     color: #fff;
     border: none;
-    padding: 10px;
+    padding: 11px;
     border-radius: 0 10px 10px 0;
     cursor: pointer;
   }
@@ -161,11 +231,6 @@ main {
 .navbar.scrolled {
     background-color: #d2c3a7; 
   }
-
-/* .navbar > h1 ul {
-    position: sticky;
-    top: 0;
-} */
 
 .nav-links {
     list-style-type: none;
@@ -221,9 +286,18 @@ main {
     color: #d2c3a7;
     padding: 20px;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     /* transition: transform 0.3s ease-in-out;  */
+}
+
+.footer-container {
+    background-color: #6b5338;
+    color: #d2c3a7;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
 /* .footer-container.sticky {
@@ -403,4 +477,89 @@ video {
 .collection-container a {
     text-decoration: none;
     color: rgb(250, 243, 234) ;
+}
+
+.lux {
+    color: rgb(250, 243, 234);
+    display: flex;
+    justify-content: center;
+}
+
+.lux2 {
+    color: rgb(250, 243, 234);
+    margin-top: 55px;
+}
+
+.backimg {
+    background: url(https://tyra-parring.github.io/host-/image/pexels-lenacs-10884711.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.store-container {
+    width: 100%; 
+    overflow-x: hidden; 
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#wmncoats h2 {
+    color: rgb(250, 243, 234);
+}
+
+#wmncoats p {
+    color: rgb(250, 243, 234);
+    font-size: x-large;
+    justify-content: center;
+}
+
+.main-image {
+    width: 310px;
+}
+
+.hover-image {
+    width: 310px;
+}
+
+#mencoats h2{
+    color: #f4f1e6;
+}
+
+#mencoats p {
+    color: #f4f1e6;
+}
+
+.bckgrnd {
+    background: url(https://tyra-parring.github.io/host-/image/pexels-clarissa-schwarz-8941371.jpg);
+}
+
+.bckgrnd [type="submit"] {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 7px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.bckgrnd [type="submit"]:hover {
+    background-color: white;
+    color: #6b5338;
+}
+
+.checkout-container {
+    color: #f4f1e6;
+}
+
+.checkout-container h2 {
+margin-top: 90px;
 }
