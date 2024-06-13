@@ -123,6 +123,41 @@ main {
     z-index: 899;
 }
 
+.search-bar {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input[type="search"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    background-color: #6b5338;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #d2c3a7;
+  }
+  
+  .search-bar i {
+    font-size: 18px;
+  }
+
 .navbar.scrolled {
     background-color: #d2c3a7; 
   }
