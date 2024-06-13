@@ -47,7 +47,7 @@ function addToCart(button) {
   localStorage.setItem('cartItems', JSON.stringify(cartItems));
   button.textContent = 'Added to Cart';
   button.disabled = true;
-  window.location.href = "cart.html";
+  window.location.href = "checkout.html";
 }
 
 function updateCartDisplay() {
