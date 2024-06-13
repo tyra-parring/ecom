@@ -228,6 +228,26 @@ main {
     font-size: 18px;
   }
 
+  #search-results {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #6b5338;
+    padding: 10px;
+    display: none;
+  }
+  
+  #search-results li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #d2c3a7;
+  }
+  
+  #search-results li:hover {
+    background-color: #f4f1e6;
+  }
+
 .navbar.scrolled {
     background-color: #d2c3a7; 
   }
