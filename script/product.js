@@ -42,7 +42,7 @@ window.addEventListener('scroll', function() {
 function addToCart(button) {
   let itemName = button.parentElement.querySelector('h2').textContent;
   let price = button.parentElement.querySelector('p').textContent.split(' ')[1];
-  let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  let cartItems = localStorage.getItem('cartItems')? JSON.parse(localStorage.getItem('cartItems')) : [];
   cartItems.push({ name: itemName, price: price });
   localStorage.setItem('cartItems', JSON.stringify(cartItems));
   button.textContent = 'Added to Cart';
@@ -51,7 +51,7 @@ function addToCart(button) {
 }
 
 function updateCartDisplay() {
-  let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  let cartItems = localStorage.getItem('cartItems')? JSON.parse(localStorage.getItem('cartItems')) : [];
   let cartList = document.getElementById('cart-items');
   let totalPrice = 0;
   cartList.innerHTML = '';
