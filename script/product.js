@@ -26,7 +26,21 @@ coats.forEach(coat => {
     coat.addEventListener('click', () => {
         const price = coat.dataset.price;
         const color = coat.dataset.color;
+        const coatData = { color, price };
+        // alert(`You selected a ${color} coat for ${price}`);
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+        // Add the selected coat to the cart
+        cart.push(coatData);
+    
+        // Save the updated cart to local storage
+        localStorage.setItem('cart', JSON.stringify(cart));
+        console.log('Local storage set:', localStorage.getItem('cart'));
+    
         alert(`You selected a ${color} coat for ${price}`);
     });
 });
+
+
+
 
