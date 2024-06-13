@@ -29,33 +29,35 @@
     <div class="bckgrnd">
     <main>
             <div class="checkout-container">
-                <h2>CHECKOUT</h2>
-                <!-- Add checkout form here -->
-                <form id="checkout-form">
-                    <!-- Input fields for customer information -->
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <!-- Additional input fields as needed -->
-                    
-                    <!-- Input fields for shipping address -->
-                    <h3>Shipping Address</h3>
-                    <label for="address">Address:</label>
-                    <input type="text" id="address" name="address" required>
-                    <!-- Additional input fields as needed -->
-    
-                    <!-- Payment information -->
-                    <h3>Payment</h3>
-                    <label for="card-number">Card Number:</label>
-                    <input type="text" id="card-number" name="card-number" required>
-                    <!-- Additional input fields for expiration date, CVV, etc. -->
-                    
-                    <!-- Submit button -->
-                    <button type="submit">Place Order</button>
-                </form>
+                <div class="checkout-wrapper">
+                    <h2>CHECKOUT</h2>
+                    <form id="checkout-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <h3>Shipping Address</h3>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+        
+                        <h3>Payment</h3>
+                        <label for="card-number">Card Number:</label>
+                        <input type="text" id="card-number" name="card-number" required>
+                        
+                        <button type="submit">Place Order</button>
+                    </form>
+                </div>
+
+            <div class="cart-summary">
+                <h2>CART SUMMARY</h2>
+                <ul id="cart-items"></ul>
+                <p id="total-price">R0.00</p>
             </div>
-            <br>
+
+            <button id="add-button">Add to Cart</button>
+        <button id="remove-button">Remove from Cart</button>
+        <input id="quantity-input" type="number" value="1"/>
 
         </main>
     </div>
