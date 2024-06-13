@@ -153,6 +153,21 @@ main {
    font-weight: 100;
 }
 
+.coat button[type="submit"] {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 118px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.coat button[type="submit"]:hover {
+    background-color: white;
+    color: #6b5338;
+}
+
+
 #navbar {
     padding: 20px;
     padding-top: 39px;
@@ -476,9 +491,17 @@ body {
 }
 
 .main-image {
-    width: 350px;
+    width: 310px;
 }
 
 .hover-image {
-    width: 350px;
+    width: 310px;
+}
+
+#mencoats h2{
+    color: #f4f1e6;
+}
+
+#mencoats p {
+    color: #f4f1e6;
 }
