@@ -20,69 +20,36 @@ window.addEventListener('scroll', function() {
 });
 
 //adding products to cart
-let cart = {};
+document.addEventListener("DOMContentLoaded", function() {
+    const addToCartButtons = document.querySelectorAll('[id^="add-to-cart-button"]');
+    const cartItemsList = document.getElementById("cart-items");
 
-function addToCart(productId, productName, price) {
-    if (cart[productId]) {
-        cart[productId].quantity++;
-    } else {
-        cart[productId] = {
-            name: productName,
-            price: price,
-            quantity: 1
-        };
-    }
+    addToCartButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const itemContainer = button.closest(".coat");
+            const itemName = itemContainer.querySelector("h2").textContent;
+            const itemPrice = itemContainer.getAttribute("data-price");
+            const itemColor = itemContainer.getAttribute("data-color");
 
-    updateCartSummary();
-}
+            const cartItem = document.createElement("li");
+            cartItem.textContent = `${itemName} - ${itemColor} - R${itemPrice}`;
 
-function removeFromCart(productId) {
-  if (cart[productId]) {
-      delete cart[productId];
-  }
+            cartItemsList.appendChild(cartItem);
 
-  updateCartSummary();
-}
+            button.textContent = "Added to Cart";
+            button.disabled = true; 
 
-function updateQuantity(productId, quantity) {
-  if (cart[productId]) {
-      cart[productId].quantity = quantity;
-  }
-
-  updateCartSummary();
-}
-
-function updateCartSummary() {
-    const cartItemsElement = document.getElementById('cart-items');
-    const totalPriceElement = document.getElementById('total-price');
-
-    cartItemsElement.innerHTML = '';
-
-    let totalPrice = 0;
-    for (const productId in cart) {
-        const product = cart[productId];
-        const listItem = document.createElement('li');
-        listItem.textContent = `${product.name} x ${product.quantity} = $${product.price * product.quantity}`;
-        cartItemsElement.appendChild(listItem);
-        totalPrice += product.price * product.quantity;
-    }
-
-    totalPriceElement.textContent = `$${totalPrice.toFixed(2)}`;
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    const addButton = document.getElementById('add-button');
-    addButton.addEventListener('click', () => {
-        addToCart('product-1', 'Product 1', 19.99);
+            calculateTotal();
+        });
     });
+
+    function calculateTotal() {
+        const cartItems = cartItemsList.querySelectorAll("li");
+        let total = 0;
+        cartItems.forEach(item => {
+            const price = parseFloat(item.textContent.split("R")[1]);
+            total += price;
+        });
+        console.log("Total Price: R" + total);
+    }
 });
-
-const removeButton = document.getElementById('remove-button');
-    removeButton.addEventListener('click', () => {
-        removeFromCart('product-1');
-    });
-
-    const quantityInput = document.getElementById('quantity-input');
-    quantityInput.addEventListener('change', () => {
-        updateQuantity('product-1', parseInt(quantityInput.value));
-    });
