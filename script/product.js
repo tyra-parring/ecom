@@ -125,6 +125,25 @@ document.addEventListener('DOMContentLoaded', function() {
     let totalPrice = 0;
     cartList.innerHTML = '';
     this.cartItems.forEach(item => {
+
+  function addToCart(button) {
+  let itemName = button.parentElement.querySelector('h2').textContent;
+  let price = button.parentElement.querySelector('p').textContent.split(' ')[1];
+  let cartItems = localStorage.getItem('cartItems')? JSON.parse(localStorage.getItem('cartItems')) : [];
+  cartItems.push({ name: itemName, price: price });
+  localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  button.textContent = 'Added to Cart';
+  button.disabled = true;
+  window.location.href = "checkout.html";
+}
+
+function updateCartDisplay() {
+  let cartItems = localStorage.getItem('cartItems')? JSON.parse(localStorage.getItem('cartItems')) : [];
+  let cartList = document.getElementById('cart-items');
+  let totalPrice = 0;
+  cartList.innerHTML = '';
+  cartItems.forEach(item => {
+
       let li = document.createElement('li');
       li.textContent = `${item.name} - R${item.price.toFixed(2)}`; 
       cartList.appendChild(li);

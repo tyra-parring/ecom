@@ -20,24 +20,13 @@
 } */
 
 .coat {
-    padding: 20px; /* Adjust as needed */
-    width: calc(33.33% - 40px); /* Calculate width dynamically to fit three items in a row with spacing */
-    height: auto; /* Adjust as needed */
+    padding: 20px; 
+    width: calc(33.33% - 40px); 
     display: inline-block;
-    margin: 0 10px 20px; /* Adjust as needed */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    vertical-align: top; /* Align elements at the top of the container */
+    margin: 0 10px 20px; 
+    box-sizing: border-box; 
+    vertical-align: top; 
 }
-
-
-
-/* .beige {
-    background-color: beige;
-} */
-
-/* .brown {
-    background-color: brown;
-} */
 
 body {
     /* font-family: Arial, sans-serif; */
@@ -49,7 +38,7 @@ body {
 
 header {
     /* background-color: #d2c3a7; */
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
     color: #6b5338;
 }
@@ -252,11 +241,6 @@ main {
     background-color: #d2c3a7; 
   }
 
-/* .navbar > h1 ul {
-    position: sticky;
-    top: 0;
-} */
-
 .nav-links {
     list-style-type: none;
     margin: 0;
@@ -367,39 +351,30 @@ main {
 }
 
 .img1 {
-    /* position: relative; */
-    width: 100%;
-    height: 100px; 
-    background-size: cover;
-    margin-bottom: 20px;
-    background-image: url('https://tyra-parring.github.io/host-/image/elegant-woman-brown-coat-spring-city.jpg');
+    background-image: url('https://tyra-parring.github.io/host-/image/romantic-smiling-stylish-woman-posing-winter-autumn-fashion-trend-blue-puffer-coat-hat-beret-old-beautiful-street-stairs.jpg');
 }
 
-.img2 {
-    /* position: relative; */
-    width: 100%;
-    height: 100px; 
-    background-size: cover;
-    margin-bottom: 20px;
-    background: url('../imgs/handsome-african-american-man-being-serious-with-copy-space.jpg')
+.imgtxt2 {
+    background-image: url('https://tyra-parring.github.io/host-/image/african-american-man-being-serious-with-copy-space.jpg'); 
 }
 
-.img3 {
-    /* position: relative; */
-    width: 100%;
-    height: 100px; 
-    background-size: cover;
-    margin-bottom: 20px;
-    background: url('../imgs/medium-shot-friends-posing-night-with-flash.jpg')
+.imgtxt3 {
+    background-image: url('https://tyra-parring.github.io/host-/image/medium-shot-friends-posing-night-with-flash.jpg');
 }
 
-.img4 {
-    /* position: relative; */
-    width: 100%;
-    height: 100px; 
+.imgtxt4 {
+    background-image: url('https://tyra-parring.github.io/host-/image/bruce-mars-qNAFGAoP3cI-unsplash.jpg');
+}
+
+.imgtxt1,
+.imgtxt2,
+.imgtxt3,
+.imgtxt4 {
     background-size: cover;
-    margin-bottom: 20px;
-    background: url('../imgs/elegant-woman-brown-coat-spring-city.jpg')
+    background-position: center; 
+    color: #fff; 
+    text-align: center;
+    padding: 20px; 
 }
 
 .navbar.scrolled {
@@ -492,16 +467,24 @@ video {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
-    filter: brightness(0.8);
+    filter: brightness(0.9);
+    padding-top: 90px;
 }
 
 .collection-container {
     padding-bottom: 100px;
+    display: inline-block;
+    display: flex;
+    justify-content: center
 }
-
+    
 .collection-container a {
     text-decoration: none;
-    color: rgb(250, 243, 234) ;
+    color: rgb(250, 243, 234);
+}
+
+.collection-container a:last-child {
+  margin-right: 0; 
 }
 
 .lux {
@@ -585,4 +568,278 @@ body {
       transform: rotate(360deg);
     }
   }
+ 
+.bckgrnd {
+    background: url(https://tyra-parring.github.io/host-/image/pexels-clarissa-schwarz-8941371.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bckgrnd [type="submit"] {
+    background-color: transparent;
+    border: 1px solid white;
+    color: #6b5338;
+    padding: 5px 7px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.bckgrnd [type="submit"]:hover {
+    background-color: white;
+    color: #6b5338;
+}
+
+.checkout-container h2 {
+margin-top: 90px;
+color: #f4f1e6;
+}
+
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.checkout-container h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.checkout-container h3 {
+    color: #6b5338;
+}
+
+#checkout-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .cart-summary {
+    margin-bottom: 10px;
+} */
+
+.contact-container {
+    margin-top: 99px;
+}
   
+  .contact-container h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #5e4a33;
+    margin-top: 120px;
+  }
+  
+  .contact-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #e4d5b7;
+  }
+
+
+  .contact-container span {
+    color: #5e4a33;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 80%; 
+    margin: 0 auto;
+    padding: 10%; */
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #e9d9bb;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #6b5338;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #baab92;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #6b5338;
+  }
+
+  .contact-info {
+    margin-top: 20px; 
+    color: #e4d5b7;
+  }
+  
+  .contact-info h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #f4f1e6;
+  }
+
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-info li {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #5f472b;
+    vertical-align: middle;
+  }
+
+  .contact-info span {
+    font-weight: bold;
+    margin-right: 10px; 
+    color: #ebdbbd;
+    font-size: large;
+  }
+
+  .contact-info a {
+    text-decoration: none;
+    color: #f4f1e6;
+    color: inherit;
+  }
+  
+  .contact-info a:hover {
+    color: #6b5338;
+  }
+  
+  .contact-container {
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  label, input, textarea, button[type="submit"] {
+    animation: slide-in 1s ease-in-out;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .pic {
+    background: url(https://tyra-parring.github.io/host-/image/pexels-irenelasus-84506.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    object-fit: contain;
+  }
+
+  .search-bar {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    margin-top: 35px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input[type="search"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    width: 150px;
+    height: 41px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    background-color: #6b5338;
+    color: #fff;
+    border: none;
+    padding: 11px;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #d2c3a7;
+  }
+  
+  .search-bar i {
+    font-size: 18px;
+  }
+
+  #search-results {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #6b5338;
+    padding: 10px;
+    display: none;
+  }
+  
+  #search-results li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #d2c3a7;
+  }
+  
+  #search-results li:hover {
+    background-color: #f4f1e6;
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #baab92;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
