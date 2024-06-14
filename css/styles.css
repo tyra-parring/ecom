@@ -20,24 +20,13 @@
 } */
 
 .coat {
-    padding: 20px; /* Adjust as needed */
-    width: calc(33.33% - 40px); /* Calculate width dynamically to fit three items in a row with spacing */
-    height: auto; /* Adjust as needed */
+    padding: 20px; 
+    width: calc(33.33% - 40px); 
     display: inline-block;
-    margin: 0 10px 20px; /* Adjust as needed */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    vertical-align: top; /* Align elements at the top of the container */
+    margin: 0 10px 20px; 
+    box-sizing: border-box; 
+    vertical-align: top; 
 }
-
-
-
-/* .beige {
-    background-color: beige;
-} */
-
-/* .brown {
-    background-color: brown;
-} */
 
 body {
     /* font-family: Arial, sans-serif; */
@@ -467,7 +456,8 @@ video {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
-    filter: brightness(0.8);
+    filter: brightness(0.9);
+    padding-top: 90px;
 }
 
 .collection-container {
