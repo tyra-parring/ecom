@@ -843,3 +843,46 @@ textarea {
   margin-bottom: 10px;
 }
 
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+#product-form,
+#product-list {
+  background-color: #fff;
+  padding: 1em;
+  margin: 1em 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-item {
+  list-style: none;
+  padding: 1em;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.product-item:last-child {
+  border-bottom: none;
+}
+
+.product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 1em;
+}
+
+.delete-btn {
+  background-color: #baab92;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  margin-left: auto;
+  border-radius: 5px;
+}
